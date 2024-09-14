@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Web Page</title>
+    <style>
+      button {
+        padding: 10px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      #addButton {
+        background-color: blue;
+      }
+      #deleteButton {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dynamic Web page</h1>
+    <input
+      type="text"
+      id="itemInput"
+      placeholder="Enter items separated by commas"
+    />
+    <button id="addButton">Add</button>
+    <button id="deleteButton">Delete</button>
+
+    <ul id="itemList">
+      <!-- Items will be added dynamically here -->
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
