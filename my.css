@@ -1,0 +1,29 @@
+/* Default styles for desktop */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.table-wrapper {
+  margin: 20px;
+}
+
+/* Styles for tablet devices */
+@media (max-width: 768px) {
+  .table-wrapper {
+    margin: 10px;
+  }
+  .table-title h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 576px) {
+  .table {
+    font-size: 0.9em;
+  }
+  .table-title h2 {
+    font-size: 1.2em;
+  }
+}

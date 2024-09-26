@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="my.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  </head>
+  <body>
+    <form
+      name="form1"
+      onsubmit="return validateForm()"
+      method="post"
+      class="container"
+    >
+      <div class="modal-header">
+        <h4 class="modal-title">Add Book</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Book title</label>
+          <input type="text" name="subject" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>author</label>
+          <input type="text" name="subject2" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>genre</label>
+          <textarea name="subject3" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label>publisher</label>
+          <input type="text" name="subject4" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>publication year</label>
+          <input type="text" name="subject5" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>ISBN</label>
+          <input type="text" name="subject6" class="form-control" />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-success" value="Submit" />
+        <input
+          type="button"
+          class="btn btn-default"
+          data-dismiss="modal"
+          value="Cancel"
+          onclick="window.location.href='index.html'"
+        />
+      </div>
+    </form>
+
+    <script>
+      function validateForm() {
+        event.preventDefault();
+
+        var subject = document.form1.subject;
+        if (subject.value == "") {
+          alert("Please enter a title");
+          subject.focus();
+          return false;
+        }
+
+        var subject2 = document.form1.subject2;
+        if (subject2.value == "") {
+          alert("Please enter the author name");
+          subject2.focus();
+          return false;
+        }
+
+        var subject3 = document.form1.subject3;
+        if (subject3.value == "") {
+          alert("Please enter the genre");
+          subject3.focus();
+          return false;
+        }
+
+        var subject4 = document.form1.subject4;
+        if (subject4.value == "") {
+          alert("Please enter the publisher");
+          subject4.focus();
+          return false;
+        }
+
+        var subject5 = document.form1.subject5;
+        if (subject5.value == "") {
+          alert("Please enter the publication year");
+          subject5.focus();
+          return false;
+        }
+
+        var subject6 = document.form1.subject6;
+        if (subject6.value == "") {
+          alert("Please enter ISBN");
+          subject6.focus();
+          return false;
+        }
+
+        alert("Item added");
+        document.form1.reset();
+        return true;
+      }
+    </script>
+  </body>
+</html>
