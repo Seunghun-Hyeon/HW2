@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX CRUD Page</title>
+  </head>
+  <body>
+    <h1>AJAX CRUD Example</h1>
+
+    <!-- Form to Add New Item -->
+    <h2>Add New Item</h2>
+    <form id="addForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="email" placeholder="Email" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Data List -->
+    <h2>Data List</h2>
+    <ul id="dataList"></ul>
+
+    <!-- JavaScript for AJAX CRUD -->
+    <script src="crud.js"></script>
+  </body>
+</html>
